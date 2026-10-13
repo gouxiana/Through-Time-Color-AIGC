@@ -47,23 +47,15 @@
 
 ### 输入图像与生成结果
 
-素材中保留了残损壁画的原始输入、局部修复结果和多轮实验截图，可看到从破损图像到候选结果的变化。
-
-| 原始输入与候选结果 | 图生图实验界面 |
-| --- | --- |
-| ![残损壁画输入](images/process/process-01-input-mural.jpg) | ![LiblibAI 生成结果](images/process/process-02-liblibai-output.jpg) |
-
-![局部图生图修复过程](images/process/process-05-image-to-image.jpg)
-
-上图展示局部区域从残损输入到候选修复结果的变化，用于说明生成式修复并非一次完成，而是需要结合区域特征进行多轮尝试。
+素材中保留了残损壁画的原始输入、局部修复结果和多轮实验截图，可看到从破损图像到候选结果的变化。生成式修复并非一次完成，而是需要结合区域特征进行多轮尝试。
 
 ### 工作流与结构约束
 
 通过节点化工作流串联图像加载、结构分析、模型加载、提示词、采样和保存等步骤，并用 ControlNet 的边缘预处理保留人物轮廓、裂缝走向和画面构图。
 
-| 工作流节点 | 工作流细节 |
-| --- | --- |
-| ![工作流节点](images/process/process-03-workflow.jpg) | ![工作流细节](images/process/process-04-workflow-clean.jpg) |
+| 工作流节点细节 | 
+| --- |
+| ![工作流细节](images/process/process-04-workflow-clean.jpg) |
 
 ### 参数调试记录
 
